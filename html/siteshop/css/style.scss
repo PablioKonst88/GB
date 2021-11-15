@@ -146,13 +146,23 @@ body {
 .slidfer{
   background-color: #F7F7F7;
   width: 100%;
-  // border: 1px solid #000;
-  &-wrap{
-    display: flex;
-    justify-content: center;
-    
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  &_btn{
+    padding: 13px 17px;
+    background-color: rgba(42, 42, 42, 0.15);
+    border: none;
   }
-  
+  &_btn svg{
+    fill: black;
+  }
+  &_btn:hover svg {
+    fill: #F16D7F;
+  }
+
 }
 /*страница каталога с карточками*/
 .colection{
@@ -246,19 +256,52 @@ body {
 }
 /*фильры страницы каталога*/
 .filters{
-  .wrap_filters{
+  &_wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
-  .filter_one{
-    display: flex;
-    justify-content: space-between;
+  &_one{
     padding: 51px 0 51px 15px;
-    .filter_one_text{
-      padding-right: 10px;
-    }
+    position: relative;
+    width: 360px;
   }
+  &_one[open]{
+    
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
+    
+  }
+  &_one_text{
+    display:block;
+     
+  }
+  // &_one_text_p [open]{
+  //   color: #EF5B70;
+  // }
+  &_one_text img{
+    padding-left:11px;
+    
+    
+  }
+  &_box{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 360px;
+    left:0;
+    
+  }
+  
+
+
+
+
+
+
+
+  
   .filter_two{
     margin: 0 auto;
     text-decoration: none;
@@ -275,6 +318,7 @@ body {
 padding-left:11px ;
 }
 }
+
 /*категории первой страницы*/
 .categories {
   padding: 65px 0 96px;
@@ -818,24 +862,25 @@ padding-left:11px ;
     color: #fbfbfb;
     align-self: center;
   }
-  &-svg{
-    padding-right: 8px;
+  &-wrap-social{
+    display: flex;
   }
-  &-wrap-image {
-    fill: white;
-    
+  &_icons{
+    border: none;
+    width: 31px;
+    height: 32px;
+    margin-left: 7px;
   }
-  &-wrap-image:hover{
-    fill:#F16D7F;
+  &_icons:hover{
+    background-color:#F16D7F;
   }
- 
-  &-wrap-image-item{
-    fill: black;
+  &_icons svg{
+    fill:black;
   }
-  // &-wrap-image-item:hover{
-  //   fill: white;
-  // }
-  
+  &_icons:hover svg{
+    fill:white;
+  }
+
 }
 /*ярлыки хз*/
 .form-label{
