@@ -505,7 +505,6 @@ body {
 }
 
 .filters_try_anotherdiv {
-  width: 100%;
   display: inline-block;
 }
 
@@ -516,21 +515,27 @@ body {
   padding-right: 27px;
 }
 
-.filters_two_ditails_divs {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: 1px solid green;
-}
-
-.filters_two_ditails[open] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.filters_two_form {
+  margin-top: 10px;
+  padding: 10px 0 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 6px 4px 35px black;
+          box-shadow: 6px 4px 35px black;
+  min-width: 79px;
   position: absolute;
   z-index: 2;
   background-color: white;
+}
+
+.filters_two_ditails_divs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filters_two_ditails[open] svg {
@@ -539,10 +544,8 @@ body {
 }
 
 .filters_input_text {
-  font-size: 14px;
-  line-height: 16px;
-  color: #6F6E6E;
-  padding: 7px 30px;
+  display: block;
+  margin-left: 20px;
 }
 
 .filters svg {
