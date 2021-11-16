@@ -371,11 +371,42 @@ body {
   margin-right: 30px;
 }
 
+.filters_index_summ_titlecat {
+  display: block;
+  color: #F16D7F;
+  padding-top: 24px;
+  padding-left: 34px;
+}
+
+.filters_index_summ {
+  display: block;
+}
+
 .filters summary {
   display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+
+.filters_index_menu_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 37px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.filters_index_menu_title svg {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: #6F6E6E;
+}
+
+.filters_index_menu_title svg:hover {
+  fill: #EF5B70;
 }
 
 .filters_title {
@@ -391,6 +422,33 @@ body {
   line-height: 17px;
   color: #6F6E6E;
   padding: 11px;
+}
+
+.filters li:hover {
+  font-size: 16px;
+  color: #4d4b4b;
+}
+
+.filters li:active {
+  font-size: 12px;
+}
+
+.filters_index_li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-top: 11px;
+  padding-left: 54px;
+}
+
+.filters_index_li:hover {
+  font-size: 16px;
+  color: #4d4b4b;
+}
+
+.filters_index_li:active {
+  font-size: 12px;
 }
 
 .filters_one[open] {
@@ -427,6 +485,15 @@ body {
   top: 0;
 }
 
+.filters_index_menu[open] .filters_box {
+  background-color: #FFFFFF;
+  width: 232px;
+  padding-bottom: 134px;
+  position: absolute;
+  right: 0;
+  top: 77px;
+}
+
 .filters_two {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,7 +502,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 360px;
-  position: relative;
+}
+
+.filters_try_anotherdiv {
+  width: 100%;
+  display: inline-block;
 }
 
 .filters_two_summ {

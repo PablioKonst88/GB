@@ -274,7 +274,18 @@ body {
     line-height: 17px;
     margin-right: 30px;
     // outline: 1px solid red;
-
+  }
+  &_index_menu{
+    // position: relative;
+  }
+  &_index_summ_titlecat{
+    display:block;
+    color: #F16D7F;
+    padding-top:24px; 
+    padding-left: 34px;
+  }
+  &_index_summ{
+    display:block;
     
   }
   summary {
@@ -283,6 +294,22 @@ body {
     font-size: 14px;
     line-height: 17px;
     
+  }
+  &_index_menu_title{
+    display: flex;
+    padding-top:37px;
+    padding-left:34px;
+    position: relative;
+    
+  }
+  &_index_menu_title svg{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    fill:#6F6E6E;
+  }
+  &_index_menu_title svg:hover{
+    fill:#EF5B70;
   }
   &_title{
     border-left: 5px solid #EF5B70;
@@ -297,6 +324,28 @@ body {
     line-height: 17px;
     color: #6F6E6E;
     padding: 11px;
+  }
+  li:hover{
+    font-size: 16px;
+    color: #4d4b4b;
+  }
+  li:active{
+    font-size: 12px;
+  }
+  &_index_li{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-top: 11px;
+    padding-left: 54px;
+  }
+  &_index_li:hover{
+    font-size: 16px;
+    color: #4d4b4b;
+  }
+  &_index_li:active{
+    font-size: 12px;
   }
   &_one[open]{
     box-shadow: 6px 4px 35px black; 
@@ -315,6 +364,7 @@ body {
   &_box{
     position: absolute;
   }
+  
   &_one[open]  &_box{
     background-color: #FFFFFF;;
     width: 100%;
@@ -323,13 +373,31 @@ body {
     left:0;
     top:0;
   }
+  &_index_menu[open] &_box{
+    background-color: #FFFFFF;
+    width: 232px;
+    padding-bottom: 134px;
+    position: absolute;
+    right:0;
+    top:77px;
+    
+  }
+
 /* второй блок фильтров размеры*/
   &_two{
     // outline: 1px solid red;
     display: flex;
     justify-content: space-between;
     width: 360px;
-    position: relative;
+    // position: relative;
+  }
+  &_try_anotherdiv{
+    // position: relative;
+    // background-color: green;
+    width: 100%;
+    display: inline-block;
+   
+    
   }
   &_two_summ{
     color: #6F6E6E;
