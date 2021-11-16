@@ -24,9 +24,12 @@ body {
 
 /*сияние кнопки при наведении*/
 .shine:hover {
-  -webkit-box-shadow: 0 0 15px #ff6a6a;
-          box-shadow: 0 0 15px #ff6a6a;
-  border: 1px solid #ff6a6a;
+  background-color: #ff6a6a;
+  color: #FFFFFF;
+}
+
+.shine:hover svg {
+  fill: #FFFFFF;
 }
 
 /*поведении кнопки при нажатии*/
@@ -127,7 +130,7 @@ body {
   font-size: 48px;
   line-height: 40px;
   color: #222222;
-  border-left: 12px solid #f16d7f;
+  border-left: 12px solid #ff6a6a;
   padding-left: 16px;
   margin-right: 90px;
 }
@@ -139,7 +142,7 @@ body {
 }
 
 .offer-title--pink {
-  color: #f16d7f;
+  color: #ff6a6a;
 }
 
 /*заголовок страница каталога*/
@@ -161,7 +164,7 @@ body {
 
 .arrivals_title {
   font-size: 24px;
-  color: #F16D7F;
+  color: #ff6a6a;
   line-height: 29px;
   padding: 60px 0;
 }
@@ -190,7 +193,7 @@ body {
 
 .arrivals_link_3 {
   font-weight: bold;
-  color: #F16D7F;
+  color: #ff6a6a;
 }
 
 /*слайдер в продуктах*/
@@ -229,7 +232,7 @@ body {
   position: relative;
   top: -40px;
   z-index: 10;
-  background-color: white;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,8 +266,8 @@ body {
   font-size: 14px;
   line-height: 17px;
   padding-top: 59px;
-  color: #F16D7F;
-  border-bottom: 3px solid #EF5B70;
+  color: #ff6a6a;
+  border-bottom: 3px solid #ff6a6a;
   padding-bottom: 12px;
 }
 
@@ -289,7 +292,7 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #EF5B70;
+  color: #ff6a6a;
   padding-top: 32px;
   padding-bottom: 65px;
 }
@@ -322,23 +325,27 @@ body {
 
 .colection_button {
   margin: 0 auto;
-  padding: 15px 57px 14px 22px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 57px 12px 23px;
   background-color: #FFFFFF;
-  border: 1px solid #FF6A6A;
-  color: #F26376;
+  border: 1px solid #ff6a6a;
+  color: #ff6a6a;
   font-size: 16px;
   line-height: 19px;
+  -webkit-transition: 0,3s;
+  transition: 0,3s;
 }
 
-.colection_button_redkorz {
-  padding-right: 22px;
-  padding-left: 24px;
+.colection_button svg {
+  fill: #ff6a6a;
+  margin-right: 22px;
+  -webkit-transition: 0,3s;
+  transition: 0,3s;
 }
 
 /*фильры страницы каталога*/
@@ -373,7 +380,7 @@ body {
 
 .filters_index_summ_titlecat {
   display: block;
-  color: #F16D7F;
+  color: #ff6a6a;
   padding-top: 24px;
   padding-left: 34px;
 }
@@ -406,11 +413,11 @@ body {
 }
 
 .filters_index_menu_title svg:hover {
-  fill: #EF5B70;
+  fill: #ff6a6a;
 }
 
 .filters_title {
-  border-left: 5px solid #EF5B70;
+  border-left: 5px solid #ff6a6a;
   padding: 11px;
   border-bottom: 1px solid #EBEBEB;
   margin-bottom: 18px;
@@ -458,7 +465,7 @@ body {
 }
 
 .filters_one[open] .filters_one_text {
-  color: #EF5B70;
+  color: #ff6a6a;
   z-index: 2;
   /*for main see*/
   position: absolute;
@@ -466,7 +473,7 @@ body {
 }
 
 .filters_one[open] svg {
-  fill: #EF5B70;
+  fill: #ff6a6a;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -530,7 +537,7 @@ body {
   min-width: 79px;
   position: absolute;
   z-index: 2;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .filters_two_ditails_divs {
@@ -622,7 +629,7 @@ body {
 .categories-name {
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #ff6a6a;
 }
 
 /*каталог страницы каталога*/
@@ -677,12 +684,12 @@ body {
 }
 
 .card-btn:hover {
-  color: #FF6A6A;
-  border: 1px solid #FF6A6A;
+  color: #ff6a6a;
+  border: 1px solid #ff6a6a;
 }
 
 .card-btn:hover svg {
-  fill: #FF6A6A;
+  fill: #ff6a6a;
 }
 
 .feature-products_name {
@@ -751,7 +758,7 @@ body {
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 19px;
-  color: #f16d7f;
+  color: #ff6a6a;
   position: absolute;
   bottom: 0px;
 }
@@ -761,10 +768,12 @@ body {
   border: 1px solid #ff6a6a;
   font-size: 16px;
   line-height: 19px;
-  color: #f26376;
+  color: #ff6a6a;
   padding: 15px 39px;
   margin: 0 auto;
   text-decoration: none;
+  -webkit-transition: 0,3s;
+  transition: 0,3s;
 }
 
 /*кнопка страницы каталога*/
@@ -818,7 +827,7 @@ body {
 }
 
 .paginator-wrap_page-link:hover {
-  color: #EF5B70;
+  color: #ff6a6a;
 }
 
 /*ярлычки первой страницы*/
@@ -920,7 +929,7 @@ body {
 }
 
 .cart_text-1 {
-  color: #EF5B70;
+  color: #ff6a6a;
 }
 
 .cart_text-4_two {
@@ -1013,7 +1022,7 @@ body {
 }
 
 .pooceed_p_2_red {
-  color: #F16D7F;
+  color: #ff6a6a;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -1021,7 +1030,7 @@ body {
 }
 
 .pooceed_button {
-  background-color: #F16D7F;
+  background-color: #ff6a6a;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1105,7 +1114,7 @@ body {
 
 .registration_button {
   padding: 16px 0 17px 29px;
-  background-color: #F16D7F;
+  background-color: #ff6a6a;
   border: none;
   color: #FFFFFF;
   margin-top: 75px;
@@ -1114,7 +1123,7 @@ body {
 }
 
 .registration_button:hover {
-  background-color: #f05065;
+  background-color: #ff7e7e;
 }
 
 .registration_button_arrow {
@@ -1270,7 +1279,7 @@ body {
 .feedback-subscripe-button {
   padding: 20px;
   border-radius: 0 26px 26px 0;
-  background-color: #F16D7F;
+  background-color: #ff6a6a;
   border: none;
   color: #FFFFFF;
   font-size: 14px;
@@ -1319,7 +1328,7 @@ body {
 }
 
 .footer_icons:hover {
-  background-color: #F16D7F;
+  background-color: #ff6a6a;
 }
 
 .footer_icons svg {
@@ -1327,7 +1336,7 @@ body {
 }
 
 .footer_icons:hover svg {
-  fill: white;
+  fill: #FFFFFF;
 }
 
 /*ярлыки хз*/
