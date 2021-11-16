@@ -385,16 +385,12 @@ body {
 
 /* второй блок фильтров размеры*/
   &_two{
-    // outline: 1px solid red;
     display: flex;
     justify-content: space-between;
     width: 360px;
-    // position: relative;
   }
   &_try_anotherdiv{
-    // position: relative;
-    // background-color: green;
-    width: 100%;
+ 
     display: inline-block;
    
     
@@ -406,42 +402,29 @@ body {
     padding-right: 27px;
     
   }
-  &_two_ditails_divs{
-    // width:100%;
-    // display: flex
-    box-sizing: border-box;
-    outline: 1px solid green;
-  }
-  &_two_ditails[open]{
-    box-sizing: border-box;
+  &_two_form{
+    margin-top:10px;
+    padding: 10px 0 10px 0;
     display: flex;
-    // outline: 1px solid yellow;
+    flex-direction: column;
+    box-shadow: 6px 4px 35px black;
+    min-width: 79px;
     position: absolute;
     z-index: 2;
     background-color: white;
+    
+  }
+  &_two_ditails_divs{
+    box-sizing: border-box;
   }
   &_two_ditails[open] svg{
     transform: rotate(180deg);
   }
   &_input_text{
-    font-size: 14px;
-    line-height: 16px;
-    color: #6F6E6E;
-    padding:7px 30px;
-  }
+    display: block;
+   margin-left:20px ;
   
-
-  // .filter_two_links{
-  //   text-decoration: none;
-  //   padding-right: 28px;
-  //   font-size: 14px;
-  //   line-height: 17px;
-  //   color: #6F6E6E;
-  // }
-  // .filter_two_links_image{
-  //   padding-left:11px ;
-// }
-
+  }
  svg{
   fill:black;
   margin-left: 11px;
