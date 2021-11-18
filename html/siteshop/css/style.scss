@@ -698,6 +698,7 @@ body {
       width: 652px;
       padding-bottom: 128px;
     }
+    
     &-behind{
       position: relative;
       display: flex;
@@ -860,7 +861,7 @@ body {
   &_input_all{
     width: 100%;
     margin-top: 20px;
-    padding: 13px 0 16px 17px;
+    padding: 13px 10px 16px 17px;
   }
   &_radio{
     padding: 31px 0 31px 0;
@@ -872,6 +873,10 @@ body {
     &_label{
       padding: 0 20px 0 10px;
     }
+  }
+  &_margin{
+    margin-right: 10px;
+
   }
   &_text{
     font-weight: 300;

@@ -1089,7 +1089,7 @@ body {
 .registration_input_all {
   width: 100%;
   margin-top: 20px;
-  padding: 13px 0 16px 17px;
+  padding: 13px 10px 16px 17px;
 }
 
 .registration_radio {
@@ -1102,6 +1102,10 @@ body {
 
 .registration_radio_label {
   padding: 0 20px 0 10px;
+}
+
+.registration_margin {
+  margin-right: 10px;
 }
 
 .registration_text {
