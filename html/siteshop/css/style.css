@@ -78,6 +78,14 @@ body {
   border: none;
 }
 
+.header_search-button svg {
+  fill: #E8E8E8;
+}
+
+.header_search-button:hover svg {
+  fill: #ff6a6a;
+}
+
 .header_col_2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,14 +111,30 @@ body {
   color: transparent;
 }
 
+.header_cart-link svg {
+  fill: #E8E8E8;
+}
+
+.header_cart-link:hover svg {
+  fill: #ff6a6a;
+}
+
+.header_registry-link svg {
+  fill: #E8E8E8;
+}
+
+.header_registry-link:hover svg {
+  fill: #ff6a6a;
+}
+
 /*банер главной странице*/
 .offer {
-  background-color: #f1e4e6;
+  background-color: #b7f3e9;
 }
 
 .offer-wrap {
   height: 765px;
-  background-image: url(../img/man_tatle.svg);
+  background-image: url(../img/man_tatle.png);
   background-repeat: no-repeat;
   background-position-x: -226px;
   background-position-y: +34px;
@@ -387,6 +411,14 @@ body {
 
 .filters_index_summ {
   display: block;
+}
+
+.filters_index_summ svg {
+  fill: #E8E8E8;
+}
+
+.filters_index_summ:hover svg {
+  fill: #ff6a6a;
 }
 
 .filters summary {

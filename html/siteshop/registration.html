@@ -37,10 +37,10 @@
   <form class="registration">
     <fieldset class="registration_input">
       <legend class="registration_legend">Your Name</legend>
-        <input class="registration_input_all" type="text" placeholder="First Name">
-        <input class="registration_input_all" type="text" placeholder="Last Name">
+        <input class="registration_input_all" type="text" placeholder="First Name" required checked>
+        <input class="registration_input_all" type="text" placeholder="Last Name" required checked>
         <div class="registration_radio">
-          <input class="registration_margin" type="radio" name="gender" id="GenderChoice1" value="Male">
+          <input class="registration_margin" type="radio" name="gender" id="GenderChoice1" value="Male" required checked>
           <label class="registration_label registration_margin" for="GenderChoice1">Male</label>
           <input class="registration_margin" type="radio" name="gender" id="GenderChoice2" value="Female">
           <label class="registration_label registration_margin" for="GenderChoice2">Female</label>
@@ -49,8 +49,8 @@
     </fieldset>
     <fieldset class="registration_input">
       <legend class="registration_legend">Login details</legend>
-      <input class="registration_input_all" type="text" placeholder="Email">
-      <input class="registration_input_all" type="password" placeholder="Password">
+      <input class="registration_input_all" type="text" placeholder="Email" required checked>
+      <input class="registration_input_all" type="password" placeholder="Password" required checked>
       <p class="registration_text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
       <button class="registration_button"><span class="registration_join">JOIN NOW</span> <img class="registration_button_arrow" src="img/join_now_arrow.svg" alt="arrow"></button>
     </fieldset>
@@ -84,7 +84,7 @@
             >
           </h1>
           <form action="#" class="feedback-subscripe">
-            <input type="email" class="feedback-subscripe-field" placeholder="Enter you email" >
+            <input type="email" class="feedback-subscripe-field" placeholder="Enter you email" required checked>
             <input type="submit" class="feedback-subscripe-button" value="Subscripe" />
             <!-- <button type="submit" class="subscripe-button">Subscripe</button> -->
           </form>

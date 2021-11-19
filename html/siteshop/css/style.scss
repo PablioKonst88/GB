@@ -59,6 +59,12 @@ body {
     background-color: transparent;
     border: none;
   }
+  &_search-button svg{
+    fill:#E8E8E8;
+  }
+  &_search-button:hover svg{
+    fill:$standart_pink;
+  }
   &_col_2 {
     display: flex;
     align-items: center;
@@ -67,6 +73,7 @@ body {
     background-color: transparent;
     border: none;
   }
+ 
   &_registry-link {
     text-decoration: none;
     color: transparent;
@@ -76,13 +83,25 @@ body {
     text-decoration: none;
     color: transparent;
   }
+  &_cart-link svg{
+    fill:#E8E8E8;
+  }
+  &_cart-link:hover svg{
+    fill:$standart_pink;
+  }
+  &_registry-link svg{
+    fill:#E8E8E8;
+  }
+  &_registry-link:hover svg{
+    fill:$standart_pink;
+  }
 }
 /*банер главной странице*/
 .offer {
-  background-color: #f1e4e6;
+  background-color: #b7f3e9;
   &-wrap {
     height: 765px;
-    background-image: url(../img/man_tatle.svg);
+    background-image: url(../img/man_tatle.png);
     background-repeat: no-repeat;
     background-position-x: -226px;
     background-position-y: +34px;
@@ -292,6 +311,12 @@ body {
   &_index_summ{
     display:block;
     
+  }
+  &_index_summ svg{
+    fill:#E8E8E8;
+  }
+  &_index_summ:hover svg{
+    fill:$standart_pink;
   }
   summary {
     display: block;
