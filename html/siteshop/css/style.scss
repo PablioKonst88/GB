@@ -1145,8 +1145,6 @@ body {
     color: #000000;
     margin-bottom: 25px;
     text-transform: uppercase;
-    
-
   }
   &-list{
     list-style: none;
@@ -1166,16 +1164,18 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding-bottom: 100px;
-    
-    
-
+  }
+  &-link:hover{
+    color: black;
   }
   &-submenu-link{
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    text-decoration: none;
-    
+    text-decoration: none; 
+  }
+  &-submenu-link:hover{
+    color: $standart_pink;
   }
   &-summenu-item{
     margin-bottom: 15px;

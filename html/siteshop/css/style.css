@@ -1471,11 +1471,19 @@ body {
   padding-bottom: 100px;
 }
 
+.main-menu-link:hover {
+  color: black;
+}
+
 .main-menu-submenu-link {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
   text-decoration: none;
+}
+
+.main-menu-submenu-link:hover {
+  color: #ff6a6a;
 }
 
 .main-menu-summenu-item {
