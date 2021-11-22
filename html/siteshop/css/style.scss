@@ -19,8 +19,9 @@ body {
 .wrapper {
   max-width: $content_width;
   margin: 0 auto;
-  // outline: 1px solid rgb(243, 11, 11);
+  
 }
+
 /*сияние кнопки при наведении*/
 .shine:hover {
   background-color: $standart_pink;
@@ -103,7 +104,7 @@ body {
 .offer {
   background-color: #b7f3e9;
   &-wrap {
-    height: 765px;
+    min-height: 765px;
     background-image: url(../img/man_tatle.png);
     background-repeat: no-repeat;
     background-position-x: -226px;
@@ -120,6 +121,7 @@ body {
     border-left: 12px solid $standart_pink;
     padding-left: 16px;
     margin-right: 90px;
+   
   }
   &-title--small {
     font-size: 32px;
@@ -481,27 +483,27 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  .categories-item--women {
+  &-item--women {
     background-image: url(../img/baba.jpg);
     height: 260px;
     width: 360px;
     background-size: cover;
 
   }
-  .categories-item--men {
+  &-item--men {
     height: 260px;
     width: 360px;
     background-image: url(../img/muz.jpg);
     background-size: cover;
   }
-  .categories-item--kids {
+  &-item--kids {
     background-image: url(../img/pizduk.jpg);
     height: 260px;
     width: 360px;
     background-size: cover;
     
   }
-  .categories-item--assesories {
+  &-item--assesories {
     background-image: url(../img/assss.jpg);
     height: 180px;
     width: 100%;
@@ -522,6 +524,7 @@ body {
     color: $standart_pink;
   }
 }
+
 /*каталог страницы каталога*/
 /*анимация на карточке товара*/
 .card-overlay{
@@ -1083,30 +1086,71 @@ body {
   display: block;
 }
 /*адаптив*/
-@media (max-width: 768px) {
-  .offer {
+@media (max-width:1200px){
+  $content_width: 735px;
+  .wrapper{
+    max-width: $content_width;
+    outline: 1px solid rgb(243, 11, 11);
+  }
+  .offer-wrap{
+    min-height:367px;
+    background-size:contain;
+    background-position-x: -26px;
+    background-position-y: 0;
+  }
+  .offer-title{
+    margin-right: 0;
+    font-size: 44px;
     
-    &-wrap {
-      height: 367px;
-      background-position-x: -40px;
-      background-position-y: +20px;
-      background-size:contain;
-      
-    }}
+  }
+  .offer-title--small{
+    font-size: 24px;
+    line-height: 29px;
+  }
   .categories {
-    padding:20px 19px 154px;
-  
-  &-item {
-    width: 232px;
+     padding:20px 19px 154px;
+  }    
+
+  .categories-item--women {
     height: 167px;
-      }
-  &-item--assesories{
+    width: 232px;
+  }
+  .categories-item--men {
+    height: 167px;
+    width: 232px;  
+  }
+  .categories-item--kids {
+    height: 167px;
+    width: 232px;
+  }
+  .categories-item--assesories{
     height: 116px;
-    width: 100%;
-    margin-top: 19px;
-  }  
- }
+  }
 }
+// @media (max-width:1200px){
+//   .offer {
+    
+//     &-wrap {
+//       height: 367px;
+//       background-position-x: -40px;
+//       background-position-y: +20px;
+//       background-size:contain;
+      
+//     }}
+//   .categories {
+//     padding:20px 19px 154px;
+  
+//   &-item {
+//     width: 232px;
+//     height: 167px;
+//       }
+//   &-item--assesories{
+//     height: 116px;
+//     width: 100%;
+//     margin-top: 19px;
+//   }  
+//  }
+// }
 /*formenu*/
 .main-menu{
   background-color: $standart_white;

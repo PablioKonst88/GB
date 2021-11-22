@@ -133,7 +133,7 @@ body {
 }
 
 .offer-wrap {
-  height: 765px;
+  min-height: 765px;
   background-image: url(../img/man_tatle.png);
   background-repeat: no-repeat;
   background-position-x: -226px;
@@ -623,28 +623,28 @@ body {
           flex-direction: column;
 }
 
-.categories .categories-item--women {
+.categories-item--women {
   background-image: url(../img/baba.jpg);
   height: 260px;
   width: 360px;
   background-size: cover;
 }
 
-.categories .categories-item--men {
+.categories-item--men {
   height: 260px;
   width: 360px;
   background-image: url(../img/muz.jpg);
   background-size: cover;
 }
 
-.categories .categories-item--kids {
+.categories-item--kids {
   background-image: url(../img/pizduk.jpg);
   height: 260px;
   width: 360px;
   background-size: cover;
 }
 
-.categories .categories-item--assesories {
+.categories-item--assesories {
   background-image: url(../img/assss.jpg);
   height: 180px;
   width: 100%;
@@ -1381,24 +1381,42 @@ body {
 }
 
 /*адаптив*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 735px;
+    outline: 1px solid #f30b0b;
+  }
   .offer-wrap {
-    height: 367px;
-    background-position-x: -40px;
-    background-position-y: +20px;
+    min-height: 367px;
     background-size: contain;
+    background-position-x: -26px;
+    background-position-y: 0;
+  }
+  .offer-title {
+    margin-right: 0;
+    font-size: 44px;
+  }
+  .offer-title--small {
+    font-size: 24px;
+    line-height: 29px;
   }
   .categories {
     padding: 20px 19px 154px;
   }
-  .categories-item {
-    width: 232px;
+  .categories-item--women {
     height: 167px;
+    width: 232px;
+  }
+  .categories-item--men {
+    height: 167px;
+    width: 232px;
+  }
+  .categories-item--kids {
+    height: 167px;
+    width: 232px;
   }
   .categories-item--assesories {
     height: 116px;
-    width: 100%;
-    margin-top: 19px;
   }
 }
 
