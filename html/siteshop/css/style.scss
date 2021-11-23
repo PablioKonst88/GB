@@ -1236,7 +1236,6 @@ body {
 }
 .cart-section{
   flex-direction:column;
-  // justify-content: center;
   align-items:center;
 }
 .cart-wrap-product {
@@ -1269,10 +1268,7 @@ body {
   line-height: 19px;
   align-self: flex-start;
 }
-.cart-section {
-  flex-direction: row;
-  align-items: center;
-}
+
 .registration_button {
   left: 0;
 }
@@ -1313,12 +1309,7 @@ body {
     border: 1px solid #000;
     
   }
-//   .filters_two_summ svg{
-// margin:0;
-//   }
-//   // .filters_two_summ {
-//   //   display:inline;
-//   // }
+
   .offer-wrap{
     background-image: none;
     min-height:363px;
@@ -1405,46 +1396,77 @@ body {
   .feature-products-kart-5{
     display:none;
   }
+  .arrivals_title_cart{
+    padding:50px 0 69px 0;
+  }
   .cart-section{
-    flex-direction:column;
-    // justify-content: center;
-    align-items:center;
+    display: flex;
+    flex-direction: column;  
+    
+    
   }
   .cart-wrap-product {
-    
-      width: 100%;
+      margin-top: 39px;
       padding-bottom: 64px;
+      justify-content:center;
   }
   .cart-product_cart{
-    width: 100%;
+    // width: 358px;
+    height: 188px;
+    width:100%;
+    border: 1px solid #000;
+  }
+  .cart-behind{
+    padding-left: 17px;
+  }
+  .cart_close{
+    top:17px;
+    right:12px;
+    width: 10px;
+    height: 11px;
+  }
+  .cart_title{
+    font-size: 16px;
+    line-height: 19px;
+    padding: 13px 53px 25px 0;
+  }
+  .cart_text{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .sub_cart_sub {
+    padding: 9px 18px;
+    font-size: 12px;
+    line-height: 14px;
   }
   .cart-wrap{
     display:flex;
     justify-content: center;
-    padding-top: 0;
-    padding-bottom:128px;
+    // padding-top: 0;
+    padding-bottom:98px;
+    flex-direction: column;
 
+  }
+  .cart-field-wrap{
+    width: 100%;
+    margin-bottom: 48px;
   }
   .cart_pooceed {
     padding: 44px;
-    margin-top: 38px;
-    margin-left: 15px;
+    margin-top: 0;
+    margin-left: 0;
   }
-  .registration {
-    padding-top: 40px;
-    // padding-bottom: 76px;
-  }
-  .registration_reklam_block{
-    padding: 40px 0 0 22px;
-    font-size: 16px;
-    line-height: 19px;
-    align-self: flex-start;
-  }
-  .cart-section {
-    flex-direction: row;
-    align-items: center;
-  }
-  .registration_button {
-    left: 0;
-  }
+  // .registration {
+  //   padding-top: 40px;
+  //   // padding-bottom: 76px;
+  // }
+  // .registration_reklam_block{
+  //   padding: 40px 0 0 22px;
+  //   font-size: 16px;
+  //   line-height: 19px;
+  //   align-self: flex-start;
+  // }
+  // .registration_button {
+  //   left: 0;
+  // }
 }
