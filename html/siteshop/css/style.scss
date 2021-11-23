@@ -1284,6 +1284,41 @@ body {
     max-width: $content_width;
     outline: 1px solid rgb(243, 11, 11);
   }
+  .arrivals_wrap{
+    flex-direction:column;
+  }
+  .arrivals_title{
+    padding:24px 0 32px 0;
+  }
+  .arrivals_links{
+    margin-bottom: 46px;
+  }
+  .arrivals_breadcrump{
+    margin-bottom: 46px;
+  }
+  .filters_wrap{
+    padding:24px 0 40px 0;
+  
+  }
+  .filters_one_text svg{
+    width: 37.5px;
+    height: 25px;
+  }
+  .filters_one_text_title{
+    display:none;
+  }
+  .filters_two{
+    width: 260px;
+    height: 17px;
+    border: 1px solid #000;
+    
+  }
+//   .filters_two_summ svg{
+// margin:0;
+//   }
+//   // .filters_two_summ {
+//   //   display:inline;
+//   // }
   .offer-wrap{
     background-image: none;
     min-height:363px;
@@ -1300,16 +1335,18 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+  .colection-wrap {
+    margin-bottom: 64px;
+  }
   .categories {
      padding:64px 19px 64px;
   }    
   .categories-wrap{
     justify-content: center;
+    
   }
   .categories-item{
-    margin-bottom: 32px;
-  
-    
+    margin-bottom: 32px; 
   }
   .categories-item--women {
     height: 247px;

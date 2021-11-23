@@ -1615,6 +1615,36 @@ body {
     max-width: 375px;
     outline: 1px solid #f30b0b;
   }
+  .arrivals_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .arrivals_title {
+    padding: 24px 0 32px 0;
+  }
+  .arrivals_links {
+    margin-bottom: 46px;
+  }
+  .arrivals_breadcrump {
+    margin-bottom: 46px;
+  }
+  .filters_wrap {
+    padding: 24px 0 40px 0;
+  }
+  .filters_one_text svg {
+    width: 37.5px;
+    height: 25px;
+  }
+  .filters_one_text_title {
+    display: none;
+  }
+  .filters_two {
+    width: 260px;
+    height: 17px;
+    border: 1px solid #000;
+  }
   .offer-wrap {
     background-image: none;
     min-height: 363px;
@@ -1632,6 +1662,9 @@ body {
   .offer-title--small {
     font-size: 20px;
     line-height: 24px;
+  }
+  .colection-wrap {
+    margin-bottom: 64px;
   }
   .categories {
     padding: 64px 19px 64px;
