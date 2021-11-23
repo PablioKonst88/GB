@@ -1258,4 +1258,21 @@ body {
   margin-top: 38px;
   margin-left: 15px;
 }
+.registration {
+  padding-top: 40px;
+  // padding-bottom: 76px;
+}
+.registration_reklam_block{
+  padding: 40px 0 0 22px;
+  font-size: 16px;
+  line-height: 19px;
+  align-self: flex-start;
+}
+.cart-section {
+  flex-direction: row;
+  align-items: center;
+}
+.registration_button {
+  left: 0;
+}
 }

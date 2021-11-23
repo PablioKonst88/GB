@@ -1584,5 +1584,27 @@ body {
     margin-top: 38px;
     margin-left: 15px;
   }
+  .registration {
+    padding-top: 40px;
+  }
+  .registration_reklam_block {
+    padding: 40px 0 0 22px;
+    font-size: 16px;
+    line-height: 19px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .cart-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .registration_button {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
