@@ -1384,7 +1384,6 @@ body {
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 735px;
-    outline: 1px solid #f30b0b;
   }
   .offer-wrap {
     min-height: 367px;
@@ -1418,6 +1417,46 @@ body {
   .categories-item--assesories {
     height: 116px;
     margin-top: 20px;
+  }
+  .advantages-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    margin-top: 64px;
+  }
+  .advantages-wrap-icons {
+    margin-top: 48px;
+    padding-bottom: 64px;
+  }
+  .feedback-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback-wrap-kart {
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+  .feedback-wrap-kart-sub {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 140px;
   }
 }
 
