@@ -19,8 +19,9 @@ body {
 .wrapper {
   max-width: $content_width;
   margin: 0 auto;
-  // outline: 1px solid rgb(243, 11, 11);
+  
 }
+
 /*сияние кнопки при наведении*/
 .shine:hover {
   background-color: $standart_pink;
@@ -34,6 +35,9 @@ body {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
     0 -1px 0 rgba(255, 255, 255, 0.1);
 }
+// formenu
+
+
 /*главная страница первый блок */
 .header {
   background: #222222;
@@ -59,6 +63,12 @@ body {
     background-color: transparent;
     border: none;
   }
+  &_search-button svg{
+    fill:#E8E8E8;
+  }
+  &_search-button:hover svg{
+    fill:$standart_pink;
+  }
   &_col_2 {
     display: flex;
     align-items: center;
@@ -67,6 +77,7 @@ body {
     background-color: transparent;
     border: none;
   }
+ 
   &_registry-link {
     text-decoration: none;
     color: transparent;
@@ -76,13 +87,25 @@ body {
     text-decoration: none;
     color: transparent;
   }
+  &_cart-link svg{
+    fill:#E8E8E8;
+  }
+  &_cart-link:hover svg{
+    fill:$standart_pink;
+  }
+  &_registry-link svg{
+    fill:#E8E8E8;
+  }
+  &_registry-link:hover svg{
+    fill:$standart_pink;
+  }
 }
 /*банер главной странице*/
 .offer {
-  background-color: #f1e4e6;
+  background-color: #b7f3e9;
   &-wrap {
-    height: 765px;
-    background-image: url(../img/man_tatle.svg);
+    min-height: 765px;
+    background-image: url(../img/man_tatle.png);
     background-repeat: no-repeat;
     background-position-x: -226px;
     background-position-y: +34px;
@@ -98,6 +121,7 @@ body {
     border-left: 12px solid $standart_pink;
     padding-left: 16px;
     margin-right: 90px;
+   
   }
   &-title--small {
     font-size: 32px;
@@ -293,6 +317,12 @@ body {
     display:block;
     
   }
+  &_index_summ svg{
+    fill:#E8E8E8;
+  }
+  &_index_summ:hover svg{
+    fill:$standart_pink;
+  }
   summary {
     display: block;
     font-weight: 600;
@@ -453,27 +483,27 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  .categories-item--women {
+  &-item--women {
     background-image: url(../img/baba.jpg);
     height: 260px;
     width: 360px;
     background-size: cover;
 
   }
-  .categories-item--men {
+  &-item--men {
     height: 260px;
     width: 360px;
     background-image: url(../img/muz.jpg);
     background-size: cover;
   }
-  .categories-item--kids {
+  &-item--kids {
     background-image: url(../img/pizduk.jpg);
     height: 260px;
     width: 360px;
     background-size: cover;
     
   }
-  .categories-item--assesories {
+  &-item--assesories {
     background-image: url(../img/assss.jpg);
     height: 180px;
     width: 100%;
@@ -494,6 +524,7 @@ body {
     color: $standart_pink;
   }
 }
+
 /*каталог страницы каталога*/
 /*анимация на карточке товара*/
 .card-overlay{
@@ -698,6 +729,7 @@ body {
       width: 652px;
       padding-bottom: 128px;
     }
+    
     &-behind{
       position: relative;
       display: flex;
@@ -860,7 +892,7 @@ body {
   &_input_all{
     width: 100%;
     margin-top: 20px;
-    padding: 13px 0 16px 17px;
+    padding: 13px 10px 16px 17px;
   }
   &_radio{
     padding: 31px 0 31px 0;
@@ -872,6 +904,10 @@ body {
     &_label{
       padding: 0 20px 0 10px;
     }
+  }
+  &_margin{
+    margin-right: 10px;
+
   }
   &_text{
     font-weight: 300;
@@ -1050,27 +1086,143 @@ body {
   display: block;
 }
 /*адаптив*/
-@media (max-width: 768px) {
-  .offer {
+@media (max-width:1200px){
+  $content_width: 735px;
+  .wrapper{
+    max-width: $content_width;
+    outline: 1px solid rgb(243, 11, 11);
+  }
+  .offer-wrap{
+    min-height:367px;
+    background-size:contain;
+    background-position-x: -26px;
+    background-position-y: 0;
+  }
+  .offer-title{
+    margin-right: 0;
+    font-size: 44px;
     
-    &-wrap {
-      height: 367px;
-      background-position-x: -40px;
-      background-position-y: +20px;
-      background-size:contain;
-      
-    }}
+  }
+  .offer-title--small{
+    font-size: 24px;
+    line-height: 29px;
+  }
   .categories {
-    padding:20px 19px 154px;
-  
-  &-item {
-    width: 232px;
+     padding:20px 19px 154px;
+  }    
+
+  .categories-item--women {
     height: 167px;
-      }
-  &-item--assesories{
+    width: 232px;
+  }
+  .categories-item--men {
+    height: 167px;
+    width: 232px;  
+  }
+  .categories-item--kids {
+    height: 167px;
+    width: 232px;
+  }
+  .categories-item--assesories{
     height: 116px;
-    width: 100%;
-    margin-top: 19px;
-  }  
- }
+    margin-top: 20px;
+  }
+}
+// @media (max-width:1200px){
+//   .offer {
+    
+//     &-wrap {
+//       height: 367px;
+//       background-position-x: -40px;
+//       background-position-y: +20px;
+//       background-size:contain;
+      
+//     }}
+//   .categories {
+//     padding:20px 19px 154px;
+  
+//   &-item {
+//     width: 232px;
+//     height: 167px;
+//       }
+//   &-item--assesories{
+//     height: 116px;
+//     width: 100%;
+//     margin-top: 19px;
+//   }  
+//  }
+// }
+/*formenu*/
+.main-menu{
+  background-color: $standart_white;
+  width:230px;
+  box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
+  padding:40px 36px;
+  position:absolute;
+  right: 0;
+  top:75px;/*смещаем вниз на высоту родителя*/
+  min-height:764px;
+  &-open{
+    display:block;
+  }
+  &-close{
+    display:none;
+  }
+  &-box{
+    position: relative;
+  }
+  &-close-btn{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top:-28px;
+    right:-26px;
+  }
+  &-close-btn svg{
+    fill:#575757;
+  }
+  &-close-btn:hover svg{
+    fill:$standart_pink;
+  }
+  &-title{
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  &-list{
+    list-style: none;
+  }
+  // &-item{
+    
+  // }
+  &-submenu{
+    list-style: none;
+    padding-left:20px;
+    margin: 15px 0;
+  }
+  &-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: $standart_pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+  }
+  &-link:hover{
+    color: black;
+  }
+  &-submenu-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none; 
+  }
+  &-submenu-link:hover{
+    color: $standart_pink;
+  }
+  &-summenu-item{
+    margin-bottom: 15px;
+  }
 }
