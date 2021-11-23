@@ -1469,6 +1469,7 @@ body {
 }
 
 /*адаптив*/
+/*tablet 768*/
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 735px;
@@ -1518,6 +1519,169 @@ body {
     padding-top: 48px;
     padding-bottom: 64px;
     margin-top: 64px;
+  }
+  .advantages-wrap-icons {
+    margin-top: 48px;
+    padding-bottom: 64px;
+  }
+  .feedback-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback-wrap-kart {
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+  .feedback-wrap-kart-sub {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 140px;
+  }
+  .feature-products-kart-2 {
+    display: none;
+  }
+  .feature-products-kart-5 {
+    display: none;
+  }
+  .cart-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cart-wrap-product {
+    width: 100%;
+    padding-bottom: 64px;
+  }
+  .cart-product_cart {
+    width: 100%;
+  }
+  .cart-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+    padding-bottom: 128px;
+  }
+  .cart_pooceed {
+    padding: 44px;
+    margin-top: 38px;
+    margin-left: 15px;
+  }
+  .registration {
+    padding-top: 40px;
+  }
+  .registration_reklam_block {
+    padding: 40px 0 0 22px;
+    font-size: 16px;
+    line-height: 19px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .cart-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .registration_button {
+    left: 0;
+  }
+}
+
+/*iPhone 11 Pro_index*/
+@media (max-width: 700px) {
+  .wrapper {
+    max-width: 375px;
+    outline: 1px solid #f30b0b;
+  }
+  .offer-wrap {
+    background-image: none;
+    min-height: 363px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer-title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .offer-title--small {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .categories {
+    padding: 64px 19px 64px;
+  }
+  .categories-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .categories-item {
+    margin-bottom: 32px;
+  }
+  .categories-item--women {
+    height: 247px;
+    width: 343px;
+  }
+  .categories-item--men {
+    height: 247px;
+    width: 343px;
+  }
+  .categories-item--kids {
+    height: 247px;
+    width: 343px;
+  }
+  .categories-item--assesories {
+    height: 111px;
+    width: 343px;
+    margin-top: 0;
+  }
+  .feature-products-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    margin-top: 94px;
   }
   .advantages-wrap-icons {
     margin-top: 48px;
