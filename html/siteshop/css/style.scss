@@ -1090,7 +1090,7 @@ body {
   $content_width: 735px;
   .wrapper{
     max-width: $content_width;
-    // outline: 1px solid rgb(243, 11, 11);
+    outline: 1px solid rgb(243, 11, 11);
   }
   .offer-wrap{
     min-height:367px;
@@ -1152,6 +1152,9 @@ body {
   margin: 0 auto;
   padding-top: 0;
   padding-bottom: 140px;
+}
+.feature-products-kart-2{
+  display:none;
 }
 }
 // @media (max-width:1200px){

@@ -1384,6 +1384,7 @@ body {
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 735px;
+    outline: 1px solid #f30b0b;
   }
   .offer-wrap {
     min-height: 367px;
@@ -1457,6 +1458,9 @@ body {
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 140px;
+  }
+  .feature-products-kart-2 {
+    display: none;
   }
 }
 
