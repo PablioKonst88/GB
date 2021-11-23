@@ -100,6 +100,80 @@ body {
     fill:$standart_pink;
   }
 }
+.main-menu{
+  background-color: $standart_white;
+  width:230px;
+  box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
+  padding:40px 36px;
+  position:absolute;
+  right: 0;
+  top:75px;/*смещаем вниз на высоту родителя*/
+  min-height:764px;
+  z-index:1;
+  &-open{
+    display:block;
+  }
+  &-close{
+    display:none;
+  }
+  &-box{
+    position: relative;
+  }
+  &-close-btn{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top:-28px;
+    right:-26px;
+  }
+  &-close-btn svg{
+    fill:#575757;
+  }
+  &-close-btn:hover svg{
+    fill:$standart_pink;
+  }
+  &-title{
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  &-list{
+    list-style: none;
+  }
+  // &-item{
+    
+  // }
+  &-submenu{
+    list-style: none;
+    padding-left:20px;
+    margin: 15px 0;
+  }
+  &-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: $standart_pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+  }
+  &-link:hover{
+    color: black;
+  }
+  &-submenu-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none; 
+  }
+  &-submenu-link:hover{
+    color: $standart_pink;
+  }
+  &-summenu-item{
+    margin-bottom: 15px;
+  }
+}
 /*банер главной странице*/
 .offer {
   background-color: #b7f3e9;
@@ -1159,102 +1233,29 @@ body {
 .feature-products-kart-5{
   display:none;
 }
+.cart-section{
+  flex-direction:column;
+  // justify-content: center;
+  align-items:center;
 }
-// @media (max-width:1200px){
-//   .offer {
-    
-//     &-wrap {
-//       height: 367px;
-//       background-position-x: -40px;
-//       background-position-y: +20px;
-//       background-size:contain;
-      
-//     }}
-//   .categories {
-//     padding:20px 19px 154px;
+.cart-wrap-product {
   
-//   &-item {
-//     width: 232px;
-//     height: 167px;
-//       }
-//   &-item--assesories{
-//     height: 116px;
-//     width: 100%;
-//     margin-top: 19px;
-//   }  
-//  }
-// }
-/*formenu*/
-.main-menu{
-  background-color: $standart_white;
-  width:230px;
-  box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
-  padding:40px 36px;
-  position:absolute;
-  right: 0;
-  top:75px;/*смещаем вниз на высоту родителя*/
-  min-height:764px;
-  &-open{
-    display:block;
-  }
-  &-close{
-    display:none;
-  }
-  &-box{
-    position: relative;
-  }
-  &-close-btn{
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    top:-28px;
-    right:-26px;
-  }
-  &-close-btn svg{
-    fill:#575757;
-  }
-  &-close-btn:hover svg{
-    fill:$standart_pink;
-  }
-  &-title{
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-  }
-  &-list{
-    list-style: none;
-  }
-  // &-item{
-    
-  // }
-  &-submenu{
-    list-style: none;
-    padding-left:20px;
-    margin: 15px 0;
-  }
-  &-link{
-    font-size: 14px;
-    line-height: 17px;
-    color: $standart_pink;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-bottom: 100px;
-  }
-  &-link:hover{
-    color: black;
-  }
-  &-submenu-link{
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    text-decoration: none; 
-  }
-  &-submenu-link:hover{
-    color: $standart_pink;
-  }
-  &-summenu-item{
-    margin-bottom: 15px;
-  }
+    width: 100%;
+    padding-bottom: 64px;
+}
+.cart-product_cart{
+  width: 100%;
+}
+.cart-wrap{
+  display:flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom:128px;
+
+}
+.cart_pooceed {
+  padding: 44px;
+  margin-top: 38px;
+  margin-left: 15px;
+}
 }
