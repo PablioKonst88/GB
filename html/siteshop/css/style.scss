@@ -1456,17 +1456,17 @@ body {
     margin-top: 0;
     margin-left: 0;
   }
-  // .registration {
-  //   padding-top: 40px;
-  //   // padding-bottom: 76px;
-  // }
-  // .registration_reklam_block{
-  //   padding: 40px 0 0 22px;
-  //   font-size: 16px;
-  //   line-height: 19px;
-  //   align-self: flex-start;
-  // }
-  // .registration_button {
-  //   left: 0;
-  // }
+  .registration {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .registration_reklam_block{
+    padding: 40px 0 92px 0;
+    font-size: 16px;
+    line-height: 19px;
+    align-self: flex-start;
+  }
+  .registration_button {
+    margin-top: 39px;
+  }
 }
