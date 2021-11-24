@@ -1165,7 +1165,7 @@ body {
   $content_width: 735px;
   .wrapper{
     max-width: $content_width;
-    outline: 1px solid rgb(243, 11, 11);
+    // outline: 1px solid rgb(243, 11, 11);
   }
   .offer-wrap{
     min-height:367px;
@@ -1277,7 +1277,7 @@ body {
   $content_width: 375px;
   .wrapper{
     max-width: $content_width;
-    outline: 1px solid rgb(243, 11, 11);
+    // outline: 1px solid rgb(243, 11, 11);
   }
   .arrivals_wrap{
     flex-direction:column;

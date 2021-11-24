@@ -1473,7 +1473,6 @@ body {
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 735px;
-    outline: 1px solid #f30b0b;
   }
   .offer-wrap {
     min-height: 367px;
@@ -1600,7 +1599,6 @@ body {
 @media (max-width: 700px) {
   .wrapper {
     max-width: 375px;
-    outline: 1px solid #f30b0b;
   }
   .arrivals_wrap {
     -webkit-box-orient: vertical;
